@@ -11,6 +11,7 @@ let isModalVisible = false;
 let leftServing = true;
 let isPageLoaded = false;
 
+
 const leftScoreElement = document.getElementById('leftScore');
 const rightScoreElement = document.getElementById('rightScore');
 const leftServeStatus = document.getElementById('leftServeStatus');
