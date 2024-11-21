@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Scoreboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="player-names">
+        <input type="text" id="leftPlayerName" placeholder="Left Player">
+        <input type="text" id="rightPlayerName" placeholder="Right Player">
+    </div>
+    <div class="controls">
+        <button id="switchServeButton" class="control-button">Switch Serve</button>
+        <button id="resetBtn" class="control-button">Reset Score</button>
+    </div>
+    <div class="scoreboard">
+        <input type="text" id="leftPlayerVictoryCount">
+        <div class="score-box left">
+            <h1 id="leftScore">0</h1>
+            <div class="serve-status" id="leftServeStatus">Serving</div>
+            <i id="left-tt-icon" class="fas fa-table-tennis"></i>
+        </div>
+        <div class="score-box right">
+            <h1 id="rightScore">0</h1>
+            <div class="serve-status" id="rightServeStatus">Not Serving</div>
+            <i id="right-tt-icon" class="fas fa-table-tennis"></i>
+        </div>
+        <input type="text" id="rightPlayerVictoryCount">
+    </div>
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            <span id="modalMessage" class="modal-message">Player wins!</span>
+            <button id="modalCloseButton" class="modal-button">OK</button>
+        </div>
+    </div>
+    <div class="instructions-link">
+        <a href="instructions.html">View Instructions</a>
+    </div>
+    <footer class="credit-section">
+        &copy
+        <a href="https://github.com/tanim913">
+            <span>Azizullah Tanim</span>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
